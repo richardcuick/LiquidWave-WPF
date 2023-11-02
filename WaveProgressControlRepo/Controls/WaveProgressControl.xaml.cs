@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Numerics;
+using System.Runtime.CompilerServices;
 using Windows.UI.Composition;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Hosting;
 using Windows.UI.Xaml.Media;
 
-namespace WaveProgressControlRepo
+namespace KunSheng.Drilling.Controls
 {
 	public sealed partial class WaveProgressControl : UserControl
 	{
@@ -30,6 +31,7 @@ namespace WaveProgressControlRepo
 			get => (double)GetValue(PercentProperty);
 			set => SetValue(PercentProperty, value);
 		}
+
 		public static readonly DependencyProperty PercentProperty =
 			DependencyProperty.Register("Percent", typeof(double), typeof(WaveProgressControl),
 				new PropertyMetadata(0.0d, (s, e) =>
