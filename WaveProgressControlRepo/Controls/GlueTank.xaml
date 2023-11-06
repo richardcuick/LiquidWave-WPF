@@ -12,7 +12,7 @@
     <Canvas>
         <TextBlock Canvas.ZIndex="2">胶液罐</TextBlock>
 
-        <Image Source="/Assets/GlueTank.png" Canvas.Top="0" Canvas.Left="0" Height="170" Width="300" Canvas.ZIndex="1"/>
+        <Image Source="/Images/GlueTank.png" Canvas.Top="0" Canvas.Left="0" Height="170" Width="300" Canvas.ZIndex="1"/>
 
         <local:WaveProgressControl x:Name="WaveProgressControl1" Canvas.Top="90" Canvas.Left="50" Percent="30" Canvas.ZIndex="2" Height="50" Width="180" />
     </Canvas>

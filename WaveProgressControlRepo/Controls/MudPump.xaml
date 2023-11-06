@@ -11,7 +11,7 @@
 
     <Canvas>
         <TextBlock Canvas.ZIndex="2">泥浆泵</TextBlock>
-        
-        <Image Source="/Assets/MudPump.png" Width="100" Canvas.ZIndex="1"/>
+
+        <Image Source="/Images/MudPump.png" Width="100" Canvas.ZIndex="1"/>
     </Canvas>
 </UserControl>

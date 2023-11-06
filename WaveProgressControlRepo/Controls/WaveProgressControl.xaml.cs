@@ -52,7 +52,7 @@ namespace KunSheng.Drilling.Controls
 			void SetupClippedWaveImage()
 			{
 				// Note LoadedImageSurface is only available in 15063 onward.
-				var imageSurface = LoadedImageSurface.StartLoadFromUri(new Uri(BaseUri, "/Assets/wave.png"));
+				var imageSurface = LoadedImageSurface.StartLoadFromUri(new Uri(BaseUri, "/Images/wave.png"));
 				imageSurfaceBrush = _compositor.CreateSurfaceBrush(imageSurface);
 				imageSurfaceBrush.Stretch = CompositionStretch.None;
 				imageSurfaceBrush.Offset = new Vector2(120, 248);
