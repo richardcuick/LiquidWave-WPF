@@ -119,6 +119,9 @@
     <Compile Include="Controls\StoringTank.xaml.cs">
       <DependentUpon>StoringTank.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\WellScene.xaml.cs">
+      <DependentUpon>WellScene.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -186,6 +189,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\StoringTank.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\WellScene.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

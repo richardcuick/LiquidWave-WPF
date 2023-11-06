@@ -1,0 +1,147 @@
+﻿<UserControl
+    x:Class="KunSheng.Drilling.Controls.WellScene"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:KunSheng.Drilling.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <Canvas Name="mainCanvas" Height="900">
+
+        <local:VPipeline Height="50" Width="20" Canvas.Top="100" Canvas.Left="140" Canvas.ZIndex="12"></local:VPipeline>
+        <local:Pipeline Height="20" Width="200" Canvas.Top="150" Canvas.Left="140" Canvas.ZIndex="12"></local:Pipeline>
+        <local:VPipeline Height="80" Width="20" Canvas.Top="170" Canvas.Left="140" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="80" Width="20" Canvas.Top="170" Canvas.Left="320" Canvas.ZIndex="12"></local:VPipeline>
+
+        <local:VPipeline Height="80" Width="20" Canvas.Top="170" Canvas.Left="630" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="80" Width="20" Canvas.Top="170" Canvas.Left="730" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="80" Width="20" Canvas.Top="170" Canvas.Left="830" Canvas.ZIndex="12"></local:VPipeline>
+
+        <local:VPipeline Height="50" Width="20" Canvas.Top="130" Canvas.Left="1030" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="50" Width="20" Canvas.Top="130" Canvas.Left="1130" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="50" Width="20" Canvas.Top="130" Canvas.Left="1230" Canvas.ZIndex="12"></local:VPipeline>
+
+        <local:Pipeline Height="20" Width="290" Canvas.Top="180" Canvas.Left="1030" Canvas.ZIndex="12"></local:Pipeline>
+
+        <local:VPipeline Height="150" Width="20" Canvas.Top="200" Canvas.Left="1300" Canvas.ZIndex="12"></local:VPipeline>
+
+        <local:Pipeline Height="20" Width="1180" Canvas.Top="350" Canvas.Left="140" Canvas.ZIndex="12"></local:Pipeline>
+
+        <local:VPipeline Height="20" Width="20" Canvas.Top="330" Canvas.Left="140" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="20" Width="20" Canvas.Top="330" Canvas.Left="330" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="20" Width="20" Canvas.Top="330" Canvas.Left="640" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="20" Width="20" Canvas.Top="330" Canvas.Left="740" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="20" Width="20" Canvas.Top="330" Canvas.Left="840" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="20" Width="20" Canvas.Top="330" Canvas.Left="940" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="20" Width="20" Canvas.Top="330" Canvas.Left="1040" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="20" Width="20" Canvas.Top="330" Canvas.Left="1140" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="20" Width="20" Canvas.Top="330" Canvas.Left="1240" Canvas.ZIndex="12"></local:VPipeline>
+
+        <!-- 胶液罐 -->
+        <Canvas Canvas.Top="0"
+            Canvas.Left="0">
+            <local:GlueTank Canvas.Top="-50" Canvas.Left="50" Height="200" Width="300"></local:GlueTank>
+        </Canvas>
+
+        <!-- 泥浆泵 -->
+        <ScrollViewer Canvas.Top="0"
+                  Canvas.Left="500"
+                  Width="400"
+                  Height="200">
+            <Canvas
+            Width="400"
+            Height="1000">
+
+                <local:MudPump Canvas.Top="50" Canvas.Left="100"></local:MudPump>
+                <local:MudPump Canvas.Top="50" Canvas.Left="200"></local:MudPump>
+                <local:MudPump Canvas.Top="50" Canvas.Left="300"></local:MudPump>
+
+                <TextBlock Canvas.Top="0" Canvas.Left="0" Canvas.ZIndex="7">泥浆泵</TextBlock>
+
+                <local:MudPump Canvas.Top="250" Canvas.Left="100"></local:MudPump>
+                <local:MudPump Canvas.Top="250" Canvas.Left="200"></local:MudPump>
+                <local:MudPump Canvas.Top="250" Canvas.Left="300"></local:MudPump>
+
+                <local:MudPump Canvas.Top="450" Canvas.Left="100"></local:MudPump>
+                <local:MudPump Canvas.Top="450" Canvas.Left="200"></local:MudPump>
+                <local:MudPump Canvas.Top="450" Canvas.Left="300"></local:MudPump>
+
+            </Canvas>
+        </ScrollViewer>
+
+        <!-- 储备罐 -->
+        <ScrollViewer Canvas.Top="0"
+          Canvas.Left="900"
+          Width="400"
+          Height="200">
+            <Canvas Width="400"
+                Height="1000">
+
+                <local:StoringTank Canvas.Top="0" Canvas.Left="0" Canvas.ZIndex="3" Percent="10"/>
+                <local:StoringTank Canvas.Top="0" Canvas.Left="100" Canvas.ZIndex="2" Percent="20"/>
+                <local:StoringTank Canvas.Top="0" Canvas.Left="200" Canvas.ZIndex="1" Percent="30"/>
+
+                <local:StoringTank Canvas.Top="200" Canvas.Left="0" Canvas.ZIndex="3" Percent="40"/>
+                <local:StoringTank Canvas.Top="200" Canvas.Left="100" Canvas.ZIndex="2" Percent="50"/>
+                <local:StoringTank Canvas.Top="200" Canvas.Left="200" Canvas.ZIndex="1" Percent="60"/>
+
+                <local:StoringTank Canvas.Top="400" Canvas.Left="0" Canvas.ZIndex="3" Percent="90"/>
+                <local:StoringTank Canvas.Top="400" Canvas.Left="100" Canvas.ZIndex="2" Percent="80"/>
+                <local:StoringTank Canvas.Top="400" Canvas.Left="200" Canvas.ZIndex="1" Percent="70"/>
+
+            </Canvas>
+        </ScrollViewer>
+
+        <Canvas Canvas.Top="200"
+            Canvas.Left="0">
+
+            <local:GroutingTank Canvas.Top="0" Canvas.Left="0" Percent="80"></local:GroutingTank>
+            <local:ConicalTank Canvas.Top="0" Canvas.Left="200" Percent="90"></local:ConicalTank>
+
+        </Canvas>
+
+        <ScrollViewer Canvas.Top="200"
+                  Canvas.Left="400"
+                  Width="900" 
+                  Height="200" 
+                  VerticalScrollBarVisibility="Visible">
+            <Canvas Canvas.Top="100" 
+                Canvas.Left="100" 
+                Height="800" 
+                Width="900">
+
+                <TextBlock>罐区 纵向滚动</TextBlock>
+
+                <local:CirculatingTank Canvas.Top="0" Canvas.Left="100" Canvas.ZIndex="7"/>
+                <local:CirculatingTank Canvas.Top="0" Canvas.Left="200" Canvas.ZIndex="6"/>
+                <local:CirculatingTank Canvas.Top="0" Canvas.Left="300" Canvas.ZIndex="5"/>
+                <local:CirculatingTank Canvas.Top="0" Canvas.Left="400" Canvas.ZIndex="4"/>
+                <local:CirculatingTank Canvas.Top="0" Canvas.Left="500" Canvas.ZIndex="3"/>
+                <local:CirculatingTank Canvas.Top="0" Canvas.Left="600" Canvas.ZIndex="2"/>
+                <local:CirculatingTank Canvas.Top="0" Canvas.Left="700" Canvas.ZIndex="1"/>
+
+                <local:CirculatingTank Canvas.Top="200" Canvas.Left="100" Canvas.ZIndex="7"/>
+                <local:CirculatingTank Canvas.Top="200" Canvas.Left="200" Canvas.ZIndex="6"/>
+                <local:CirculatingTank Canvas.Top="200" Canvas.Left="300" Canvas.ZIndex="5"/>
+                <local:CirculatingTank Canvas.Top="200" Canvas.Left="400" Canvas.ZIndex="4"/>
+                <local:CirculatingTank Canvas.Top="200" Canvas.Left="500" Canvas.ZIndex="3"/>
+                <local:CirculatingTank Canvas.Top="200" Canvas.Left="600" Canvas.ZIndex="2"/>
+                <local:CirculatingTank Canvas.Top="200" Canvas.Left="700" Canvas.ZIndex="1"/>
+
+                <local:CirculatingTank Canvas.Top="400" Canvas.Left="100" Canvas.ZIndex="7"/>
+                <local:CirculatingTank Canvas.Top="400" Canvas.Left="200" Canvas.ZIndex="6"/>
+                <local:CirculatingTank Canvas.Top="400" Canvas.Left="300" Canvas.ZIndex="5"/>
+                <local:CirculatingTank Canvas.Top="400" Canvas.Left="400" Canvas.ZIndex="4"/>
+                <local:CirculatingTank Canvas.Top="400" Canvas.Left="500" Canvas.ZIndex="3"/>
+                <local:CirculatingTank Canvas.Top="400" Canvas.Left="600" Canvas.ZIndex="2"/>
+                <local:CirculatingTank Canvas.Top="400" Canvas.Left="700" Canvas.ZIndex="1"/>
+
+                <local:CirculatingTank Canvas.Top="600" Canvas.Left="100" Canvas.ZIndex="7"/>
+
+            </Canvas>
+        </ScrollViewer>
+    </Canvas>
+</UserControl>
