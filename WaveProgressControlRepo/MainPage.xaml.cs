@@ -30,34 +30,6 @@ namespace KunSheng.Drilling
         public MainPage()
         {
             this.InitializeComponent();
-
-            ThreadStart();
-
-        }
-
-        private async void ThreadStart()
-        {
-            Thread P_th = new Thread(//建立线程
-                () =>//使用lambda表达式
-                {
-                    while (true)
-                    {
-                        this.Dispatcher.RunAsync(CoreDispatcherPriority.Normal,
-                            () => {
-                                this.Line1.StrokeDashOffset += 2;
-
-                                this.Line2.StrokeDashOffset += 2;
-                            });
-
-
-
-                        Thread.Sleep(50);
-                    }
-                }
-            );
-
-            P_th.IsBackground = true;
-            P_th.Start();
         }
     }
 }

@@ -14,6 +14,6 @@
 
         <Image Source="/Assets/GlueTank.png" Canvas.Top="0" Canvas.Left="0" Height="170" Width="300" Canvas.ZIndex="1"/>
 
-        <local:WaveProgressControl x:Name="WaveProgressControl1" Canvas.Top="100" Canvas.Left="40" Percent="30" Canvas.ZIndex="2" Height="50" Width="200" />
+        <local:WaveProgressControl x:Name="WaveProgressControl1" Canvas.Top="90" Canvas.Left="50" Percent="30" Canvas.ZIndex="2" Height="50" Width="180" />
     </Canvas>
 </UserControl>

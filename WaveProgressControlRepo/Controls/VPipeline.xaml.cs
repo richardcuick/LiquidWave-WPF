@@ -20,12 +20,12 @@ using Windows.UI.Xaml.Shapes;
 
 namespace KunSheng.Drilling.Controls
 {
-    public sealed partial class Pipeline : UserControl
+    public sealed partial class VPipeline : UserControl
     {
         private Line line1 = null;
         private Line line2 = null;
 
-        public Pipeline()
+        public VPipeline()
         {
             this.InitializeComponent();
 
@@ -52,15 +52,15 @@ namespace KunSheng.Drilling.Controls
 
         public enum PipeDirection
         {
-            LeftToRight,
-            RightToLeft
+            TopToBottom,
+            BottomToTop,
         }
 
-        public PipeDirection Direction { get; set; } = PipeDirection.LeftToRight;
+        public PipeDirection Direction { get; set; }= PipeDirection.TopToBottom;
 
         private async void ThreadStart()
         {
-            int offset = this.Direction == PipeDirection.LeftToRight ? -2 : +2;
+            int offset = this.Direction == PipeDirection.TopToBottom ? -2 : 2;
 
             Thread P_th = new Thread(//建立线程
                 () =>//使用lambda表达式
@@ -72,15 +72,15 @@ namespace KunSheng.Drilling.Controls
                                 this.line1.StrokeDashOffset += offset;
                                 this.line2.StrokeDashOffset += offset;
 
-                                this.line1.Y1 = this.ActualHeight / 3;
-                                this.line1.X1 = 0;
-                                this.line1.Y2 = this.ActualHeight / 3;
-                                this.line1.X2 = this.ActualWidth;
+                                this.line1.Y1 = 0;
+                                this.line1.X1 = this.ActualWidth / 3;
+                                this.line1.Y2 = this.ActualHeight;
+                                this.line1.X2 = this.ActualWidth/3;
 
-                                this.line2.Y1 = this.ActualHeight / 3*2;
-                                this.line2.X1 = 0;
-                                this.line2.Y2 = this.ActualHeight / 3*2;
-                                this.line2.X2 = this.ActualWidth;
+                                this.line2.Y1 = 0;
+                                this.line2.X1 = this.ActualWidth / 3 * 2;
+                                this.line2.Y2 = this.ActualHeight;
+                                this.line2.X2 = this.ActualWidth / 3 * 2;
 
                                 this.MainPipe.Width = this.ActualWidth;
                                 this.MainPipe.Height = this.ActualHeight;

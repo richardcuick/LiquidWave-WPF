@@ -9,39 +9,34 @@
 
     <Canvas Name="mainCanvas" Height="900">
 
-        <Rectangle Height="50" Width="20" Canvas.Top="100" Canvas.Left="140" Fill="Blue" Canvas.ZIndex="11"></Rectangle>
-        <Rectangle Height="20" Width="200" Canvas.Top="150" Canvas.Left="140" Fill="#FF0289CD" Canvas.ZIndex="10"></Rectangle>
-        <Rectangle Height="80" Width="20" Canvas.Top="170" Canvas.Left="140" Fill="Blue" Canvas.ZIndex="11"></Rectangle>
-        <Rectangle Height="80" Width="20" Canvas.Top="170" Canvas.Left="320" Fill="Blue" Canvas.ZIndex="11"></Rectangle>
+        <local:VPipeline Height="50" Width="20" Canvas.Top="100" Canvas.Left="140" Canvas.ZIndex="12"></local:VPipeline>
+        <local:Pipeline Height="20" Width="200" Canvas.Top="150" Canvas.Left="140" Canvas.ZIndex="12"></local:Pipeline>
+        <local:VPipeline Height="80" Width="20" Canvas.Top="170" Canvas.Left="140" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="80" Width="20" Canvas.Top="170" Canvas.Left="320" Canvas.ZIndex="12"></local:VPipeline>
 
-        <Rectangle Height="80" Width="20" Canvas.Top="170" Canvas.Left="630" Fill="Blue" Canvas.ZIndex="11"></Rectangle>
-        <Rectangle Height="80" Width="20" Canvas.Top="170" Canvas.Left="730" Fill="Blue" Canvas.ZIndex="11"></Rectangle>
-        <Rectangle Height="80" Width="20" Canvas.Top="170" Canvas.Left="830" Fill="Blue" Canvas.ZIndex="11"></Rectangle>
+        <local:VPipeline Height="80" Width="20" Canvas.Top="170" Canvas.Left="630" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="80" Width="20" Canvas.Top="170" Canvas.Left="730" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="80" Width="20" Canvas.Top="170" Canvas.Left="830" Canvas.ZIndex="12"></local:VPipeline>
 
-        <Rectangle Height="50" Width="20" Canvas.Top="130" Canvas.Left="1030" Fill="Blue" Canvas.ZIndex="11"></Rectangle>
-        <Rectangle Height="50" Width="20" Canvas.Top="130" Canvas.Left="1130" Fill="Blue" Canvas.ZIndex="11"></Rectangle>
-        <Rectangle Height="50" Width="20" Canvas.Top="130" Canvas.Left="1230" Fill="Blue" Canvas.ZIndex="11"></Rectangle>
-        <Rectangle Height="20" Width="290" Canvas.Top="180" Canvas.Left="1030" Fill="#FF0289CD" Canvas.ZIndex="10"></Rectangle>
+        <local:VPipeline Height="50" Width="20" Canvas.Top="130" Canvas.Left="1030" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="50" Width="20" Canvas.Top="130" Canvas.Left="1130" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="50" Width="20" Canvas.Top="130" Canvas.Left="1230" Canvas.ZIndex="12"></local:VPipeline>
+                
+        <local:Pipeline Height="20" Width="290" Canvas.Top="180" Canvas.Left="1030" Canvas.ZIndex="12"></local:Pipeline>
 
-        <Rectangle Height="150" Width="20" Canvas.Top="200" Canvas.Left="1300" Fill="Blue" Canvas.ZIndex="11"></Rectangle>
+        <local:VPipeline Height="150" Width="20" Canvas.Top="200" Canvas.Left="1300" Canvas.ZIndex="12"></local:VPipeline>
 
-        <Rectangle x:Name="Pipe1" Height="20" Width="1180" Canvas.Top="350" Canvas.Left="140" Fill="#FF0289CD" Canvas.ZIndex="10"></Rectangle>
-
-        <Line Name="Line1" X1="140" Y1="355" X2="1320" Y2="355" Stroke="White" StrokeThickness="2" StrokeDashOffset="2" StrokeDashArray="4,3" StrokeDashCap="Flat" Canvas.ZIndex="10"/>
-        <Line Name="Line2" X1="140" Y1="365" X2="1320" Y2="365" Stroke="White" StrokeThickness="2" StrokeDashOffset="5" StrokeDashArray="4,3" StrokeDashCap="Flat" Canvas.ZIndex="10"/>
-
-        <local:Pipeline Height="20" Width="1180" Canvas.Top="500" Canvas.Left="140" Canvas.ZIndex="12"></local:Pipeline>
+        <local:Pipeline Height="20" Width="1180" Canvas.Top="350" Canvas.Left="140" Canvas.ZIndex="12"></local:Pipeline>
         
-        <Rectangle Height="20" Width="20" Canvas.Top="330" Canvas.Left="140" Fill="Blue" Canvas.ZIndex="11"></Rectangle>
-        <Rectangle Height="20" Width="20" Canvas.Top="330" Canvas.Left="330" Fill="Blue" Canvas.ZIndex="11"></Rectangle>
-        <Rectangle Height="20" Width="20" Canvas.Top="330" Canvas.Left="640" Fill="Blue" Canvas.ZIndex="11"></Rectangle>
-        <Rectangle Height="20" Width="20" Canvas.Top="330" Canvas.Left="740" Fill="Blue" Canvas.ZIndex="11"></Rectangle>
-        <Rectangle Height="20" Width="20" Canvas.Top="330" Canvas.Left="840" Fill="Blue" Canvas.ZIndex="11"></Rectangle>
-        <Rectangle Height="20" Width="20" Canvas.Top="330" Canvas.Left="940" Fill="Blue" Canvas.ZIndex="11"></Rectangle>
-        <Rectangle Height="20" Width="20" Canvas.Top="330" Canvas.Left="1040" Fill="Blue" Canvas.ZIndex="11"></Rectangle>
-        <Rectangle Height="20" Width="20" Canvas.Top="330" Canvas.Left="1140" Fill="Blue" Canvas.ZIndex="11"></Rectangle>
-        <Rectangle Height="20" Width="20" Canvas.Top="330" Canvas.Left="1240" Fill="Blue" Canvas.ZIndex="11"></Rectangle>
-
+        <local:VPipeline Height="20" Width="20" Canvas.Top="330" Canvas.Left="140" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="20" Width="20" Canvas.Top="330" Canvas.Left="330" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="20" Width="20" Canvas.Top="330" Canvas.Left="640" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="20" Width="20" Canvas.Top="330" Canvas.Left="740" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="20" Width="20" Canvas.Top="330" Canvas.Left="840" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="20" Width="20" Canvas.Top="330" Canvas.Left="940" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="20" Width="20" Canvas.Top="330" Canvas.Left="1040" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="20" Width="20" Canvas.Top="330" Canvas.Left="1140" Canvas.ZIndex="12"></local:VPipeline>
+        <local:VPipeline Height="20" Width="20" Canvas.Top="330" Canvas.Left="1240" Canvas.ZIndex="12"></local:VPipeline>
 
         <!-- 胶液罐 -->
         <Canvas Canvas.Top="0"

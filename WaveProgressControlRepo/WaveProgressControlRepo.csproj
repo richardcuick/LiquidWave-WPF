@@ -95,6 +95,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\VPipeline.xaml.cs">
+      <DependentUpon>VPipeline.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Pipeline.xaml.cs">
       <DependentUpon>Pipeline.xaml</DependentUpon>
     </Compile>
@@ -154,6 +157,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Controls\VPipeline.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Controls\Pipeline.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

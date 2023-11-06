@@ -38,7 +38,7 @@ namespace KunSheng.Drilling.Controls
 				{
 					var self = (WaveProgressControl)s;
 					var propertySet = self._percentPropertySet;
-					propertySet.InsertScalar("Value", Convert.ToSingle(e.NewValue) / 100);
+					propertySet.InsertScalar("Value", (Convert.ToSingle(e.NewValue)+(160- Convert.ToSingle(self.Height))/2 ) * Convert.ToSingle(self.Height)/160 / 100);
 				}));
 
 		private void OnLoaded(object sender, RoutedEventArgs e)
