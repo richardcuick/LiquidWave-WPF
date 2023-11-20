@@ -38,7 +38,7 @@ namespace KunSheng.Drilling.Controls
 				{
 					var self = (WaveProgressControl)s;
 					var propertySet = self._percentPropertySet;
-					propertySet.InsertScalar("Value", (Convert.ToSingle(e.NewValue)+(160- Convert.ToSingle(self.Height))/2 ) * Convert.ToSingle(self.Height)/160 / 100);
+					propertySet.InsertScalar("Value", (Convert.ToSingle(e.NewValue)+(160- Convert.ToSingle(self.ActualHeight))/2 ) * Convert.ToSingle(self.ActualHeight) /160 / 100);
 				}));
 
 		private void OnLoaded(object sender, RoutedEventArgs e)
@@ -52,7 +52,7 @@ namespace KunSheng.Drilling.Controls
 			void SetupClippedWaveImage()
 			{
 				// Note LoadedImageSurface is only available in 15063 onward.
-				var imageSurface = LoadedImageSurface.StartLoadFromUri(new Uri(BaseUri, "/Images/wave.png"));
+				var imageSurface = LoadedImageSurface.StartLoadFromUri(new Uri(BaseUri, "/Images/Wave.png"));
 				imageSurfaceBrush = _compositor.CreateSurfaceBrush(imageSurface);
 				imageSurfaceBrush.Stretch = CompositionStretch.None;
 				imageSurfaceBrush.Offset = new Vector2(120, 248);
